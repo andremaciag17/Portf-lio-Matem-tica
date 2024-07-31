@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversão de Bases</title>
+</head>
+<body>
+    <a href="index.html"><img width=170 height=100 src="imagens/LogoV.png"></a>
+    <center> <font face="arial" color="#008000" size="5"><h1>Conversão de Bases</h1></font></center>
+    <font face="arial" color="#000000" size="5"><li><b>Decimal para Binário, Octal e Hexadecimal</li></b></font>
+            <font face="arial" color="#000000" size="3"><ul>
+                Para fazer essa transformação de bases é necessário fazer divisões! 
+                Você dividirá o número a ser transformado pela base que será convertido e guardar o resto, fazer a divisão novamente pelo quociente da divisão e guardar o resto, até que não seja mais possível dividir o número. O número convertido será cada resto da divisão mais o último quociente começando pela direita.
+                <br>Muito confuso? Veja a imagem a seguir para compreender melhor:
+            </ul>
+            <img alt="Divisão." 
+            title="É preciso apenas dividir!" 
+            width=450 height=250 src="imagens/divisao.jpg">
+            <ul>
+                Para hexadecimal, é preciso converter os números maiores que 9 para seu correspondente em hexadecimal.
+            </ul></font>
+            <font face="arial" color="#000000" size="5"><li><b>Binário para Octal e Hexadecimal e vice versa</li></b></font>
+            <font face="arial" color="#000000" size="3"><ul>
+                É possível converter binários para Octal e Hexadecimal e vice-versa diretamente por meio de uma tabela. <br>Veja a tabela abaixo.
+            </ul>
+            <font size="3" face="verdana, arial"><table width="300" cellpadding="10" cellspacing="5">
+                <tr bgcolor="#C82C2C">
+                    <th scope="col">Decimal</th>
+                    <th scope="col">Binário</th>
+                    <th scope="col">Octal</th>
+                    <th scope="col">Hexa</th>
+                
+                </tr>
+                <tr bgcolor="#37AF4F">
+                    <td>0</td>
+                    <td>0000</td>
+                    <td>0</td>
+                    <td>0</td>
+                </tr>
+                <tr bgcolor="#37AF4F">
+                    <td>1</td>
+                    <td>0001</td>
+                    <td>1</td>
+                    <td>1</td>
+                </tr>
+                <tr bgcolor="#37AF4F">
+                    <td>2</td>
+                    <td>0010</td>
+                    <td>2</td>
+                    <td>2</td>
+                </tr>
+                <tr bgcolor="#37AF4F">
+                    <td>3</td>
+                    <td>0011</td>
+                    <td>3</td>
+                    <td>3</td>
+                </tr>
+                <tr bgcolor="#37AF4F">
+                    <td>4</td>
+                    <td>0100</td>
+                    <td>4</td>
+                    <td>4</td>
+                </tr>
+                <tr bgcolor="#37AF4F">
+                    <td>5</td>
+                    <td>0101</td>
+                    <td>5</td>
+                    <td>5</td>
+                </tr>
+                <tr bgcolor="#37AF4F">
+                    <td>6</td>
+                    <td>0110</td>
+                    <td>6</td>
+                    <td>6</td>
+                </tr>
+                <tr bgcolor="#37AF4F">
+                    <td>7</td>
+                    <td>0111</td>
+                    <td>7</td>
+                    <td>7</td>
+                </tr>
+                <tr bgcolor="#37AF4F">
+                    <td>8</td>
+                    <td>1000</td>
+                    <td>10</td>
+                    <td>8</td>
+                </tr>
+                <tr bgcolor="#37AF4F">
+                    <td>9</td>
+                    <td>1001</td>
+                    <td>11</td>
+                    <td>9</td>
+                </tr>
+                <tr bgcolor="#37AF4F">
+                    <td>10</td>
+                    <td>1010</td>
+                    <td>12</td>
+                    <td>A</td>
+                </tr>
+                <tr bgcolor="#37AF4F">
+                    <td>11</td>
+                    <td>1011</td>
+                    <td>13</td>
+                    <td>B</td>
+                </tr>
+                <tr bgcolor="#37AF4F">
+                    <td>12</td>
+                    <td>1100</td>
+                    <td>14</td>
+                    <td>C</td>
+                </tr>
+            
+                <tr bgcolor="#37AF4F">
+                    <td>13</td>
+                    <td>1101</td>
+                    <td>15</td>
+                    <td>D</td>
+                </tr>
+                <tr bgcolor="#37AF4F">
+                    <td>14</td>
+                    <td>1110</td>
+                    <td>16</td>
+                    <td>E</td>
+                </tr>
+                <tr bgcolor="#37AF4F">
+                    <td>15</td>
+                    <td>1111</td>
+                    <td>17</td>
+                    <td>F</td>
+                </tr>    
+            </table>
+            </font>
+            <font face="arial" color="#000000" size="3"><ul>
+                Para fazer a conversão de binário para Octal faça grupos de 3 números começando pelo último, depois olhe na tabela o correspondente em octal para esse grupo de 3 e converta, para Hexa funciona da mesma forma, mas com grupos de 4 algarismos. 
+                <br>Para converter Octal ou Hexa para binário converta cada algarismo para seu correspondente em binário individualmente começando pela último.<br> Por exemplo:
+
+            </ul>
+            <img alt="grupos." 
+            title="Faça grupos e olhe na tabela o correspondente!" 
+            width=450 height=250 src="imagens/grupos.jpg">
+            </font>
+            <font face="arial" color="#000000" size="5"><li><b>Binário, Octal e Hexa para Decimal</li></b></font>
+            <font face="arial" color="#000000" size="3"><ul>
+                Olhe a imagem a seguir, cada posição do algarismo nos números tem uma potência relacionada, 
+                para transformar essas bases é necessário apenas realizar uma multiplicação:
+            </ul>
+            <img alt="Conversão de base 2 para base 10." 
+            title="Conversão de base 2 para base 10." 
+            width=450 height=250 src="imagens/potenciaV.png">
+            <img alt="Conversão de base 8 para base 10." 
+            title="Conversão de base 8 para base 10." 
+            width=450 height=250 src="imagens/potenciaV8.png"><br>
+        <font face="arial" size="4"><b><a href="operacoes.html">Próximo Tópico</a></b></font>
+</body>
+</html>
